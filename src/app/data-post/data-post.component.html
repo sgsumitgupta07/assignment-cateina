@@ -1,0 +1,36 @@
+<div class="container">
+    <h1>Add Data</h1>
+    <hr>
+    <form [formGroup]="dataPostForm" (ngSubmit)="dataPostAction()">
+        
+        <ul>
+
+            <h6>Enter loan_id </h6>
+                <li>
+                    <input type="text" placeholder="Loan ID" formControlName="loan_id" />
+                </li>
+            
+        <br>
+
+            <h6>Enter loan_amount </h6>
+                <li>
+                    <input type="text" placeholder="Loan Amount" formControlName="loan_amount" />
+                </li>
+
+        <br>
+
+            <h6>Enter loan_date </h6>
+                <li>
+                    <input type="date" placeholder="Loan Date" formControlName="loan_date" />
+                </li>
+
+        <br>
+
+                <li>
+                    <button type="submit" [disabled]="!dataPostForm.valid">Add Data</button>
+                </li>
+        </ul>
+ 
+    </form>
+
+</div>

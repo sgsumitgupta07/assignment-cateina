@@ -1,0 +1,38 @@
+<div class="container">
+    <h1>Show Data</h1>
+
+    <table class="table">
+
+        <tr>
+            <th>
+                Transaction ID
+            </th>
+            <th>
+                Loan ID
+            </th>
+            <th>
+                Loan Amount
+            </th>
+            <th>
+                Loan Date
+            </th>
+        </tr>
+
+        <tr *ngFor="let ans of ShowDATA">
+            <td>
+                {{ans.id}}
+            </td>
+            <td>
+                {{ans.loan_id}}
+            </td>
+            <td>
+                {{ans.loan_amount}}
+            </td>
+            <td>
+                {{ans.loan_date}}
+            </td>
+        </tr>
+
+    </table>
+
+</div>
